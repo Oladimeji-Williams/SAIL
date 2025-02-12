@@ -1,0 +1,11 @@
+const express = require("express");
+const libraryController = require("../controllers/libraryController.js");
+const bookRouter = express.Router();
+bookRouter.get("/all", libraryController.getAllBooks);
+bookRouter.get("/all-with-deleted-books", libraryController.getAllWithDeletedBooks);
+bookRouter.post("/add", libraryController.addNewBook);
+bookRouter.get("/search/:title?", libraryController.getOneBook);
+bookRouter.get("/id/:id", libraryController.getOneBook);
+bookRouter.patch("/soft-delete/:id", libraryController.softDeleteBook);
+bookRouter.post("/hard-delete/:id", libraryController.hardDeleteBook);
+module.exports = bookRouter;
