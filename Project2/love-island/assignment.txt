@@ -1,0 +1,14 @@
+Build a dating app:
+
+Requirements
+------------
+- Sign up and sign in
+- Should have an `interestedIn` field
+- Should be able to fecth users based on the `interestedIn` field
+- Should be able to fecth users based on hobbies
+- Should be able to fecth a user's details
+- User should be able to delete his/her profile
+- Should be able to report a profile
+- Should be able to send love request
+- Should be able to gift a user birthday present or something
+- Should have a message feature; when someone accepts your love request (match), both users should be able to chat
